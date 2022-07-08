@@ -1,4 +1,10 @@
-*{
+@use "./utilities/fonts";
+@use "./utilities/variables";
+
+@use "./layout/header";
+@use "./layout/presentation";
+
+* {
     padding: 0;
     margin: 0;
 }

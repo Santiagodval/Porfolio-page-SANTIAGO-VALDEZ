@@ -1,0 +1,28 @@
+@use "../utilities/variables" as v;
+
+.presentation{
+
+    background-image: url("../../../images/programing.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 50vh;
+
+    color: map-get($map: v.$colors, $key: "semi-white");
+
+    h1{
+        font-family: "";
+    }
+
+    h3{
+        font-family: "";
+    }
+
+    display: grid;
+   align-items: center;
+    justify-items: center;
+
+   
+
+}

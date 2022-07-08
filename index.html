@@ -6,26 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
 
-        <div>Santi</div>
+
         <div>
-            <ul>
-                <li>About</li>
-                <li>Github</li>
-                <li>Experience</li>
-                <li>Contact</li>
-            </ul>
+            <h3 class="header__name">Santi</h3><button id="bar-button"><i class="fa-solid fa-bars"></i></button>
         </div>
+
+        <ul id="header__ul" class="none">
+            <li>About</li>
+            <li>Github</li>
+            <li>Experience</li>
+            <li>Contact</li>
+        </ul>
+
 
     </header>
     <main>
         <section class="presentation">
-            <h1>Santiago Valdez</h1>
-            <h3>Software Develeper</h3>
+            <div>
+                <h1>Santiago Valdez</h1>
+                <h3>Front end web develeper</h3>
+            </div>
         </section>
         <section class="projects">
             <h2>projects</h2>
@@ -48,12 +57,14 @@
         </section>
     </main>
     <footer>
-        <ul class="contacts">
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="contact">
+            <li>Github</li>
+            <li>Twitter</li>
+            <li>Email</li>
         </ul>
     </footer>
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

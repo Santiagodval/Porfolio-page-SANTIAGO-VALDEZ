@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@100;500&display=swap");
+header {
+  color: rgb(194, 194, 194);
+  position: absolute;
+  display: grid;
+  font-family: "Roboto Mono";
+  font-size: 1.5rem;
+}
+header div {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 1rem 0;
+}
+header div i {
+  font-size: 2rem;
+  color: rgb(194, 194, 194);
+}
+header div button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+header .header__name {
+  font-family: "Roboto Condensed";
+  font-size: 2rem;
+}
+header ul {
+  padding-bottom: 1rem;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul.none {
+  display: none;
+}
+header ul.show {
+  display: grid;
+  justify-content: center;
+}
+
+.presentation {
+  background-image: url("../../../images/programing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  color: rgb(194, 194, 194);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.presentation h1 {
+  font-family: "";
+}
+.presentation h3 {
+  font-family: "";
+}
+
 * {
   padding: 0;
   margin: 0;
