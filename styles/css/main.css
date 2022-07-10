@@ -25,17 +25,26 @@ header .header__name {
   font-size: 2rem;
 }
 header ul {
-  padding-bottom: 1rem;
+  display: grid;
+  justify-content: center;
+  color: #2e2e2e;
+  background-color: rgb(194, 194, 194);
+  transition: all 1s;
+  padding: 1rem 0 1rem;
 }
 header ul li {
   list-style-type: none;
 }
 header ul.none {
-  display: none;
+  visibility: hidden;
+  width: 1px;
+}
+header ul.none a {
+  visibility: hidden;
 }
 header ul.show {
-  display: grid;
-  justify-content: center;
+  width: 100vw;
+  visibility: visible;
 }
 
 .presentation {
@@ -54,6 +63,13 @@ header ul.show {
 }
 .presentation h3 {
   font-family: "";
+}
+
+a {
+  color: #2e2e2e;
+  /* blue colors for links too */
+  text-decoration: none;
+  /* no underline */
 }
 
 * {

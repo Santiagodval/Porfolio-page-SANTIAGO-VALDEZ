@@ -28,22 +28,31 @@ header {
     }
 
     ul {
+        display: grid;
+        justify-content: center;
+        color: map-get($map: v.$colors, $key: "semi-black");;
+        background-color: map-get($map: v.$colors, $key: "semi-white");
 
         li {
             list-style-type: none;
         }
-
-        padding-bottom: 1rem;
+        transition: all 1s;
+        padding: 1rem 0 1rem;
 
     }
 
-    ul.none{
-        display: none;
+    ul.none{//        display: none;
+        visibility: hidden;
+        width: 1px;
+        a{
+            visibility: hidden;
+        }
     }
 
     ul.show{
-        display: grid;
-        justify-content: center;
+        
+        width: 100vw;
+        visibility: visible;
     }
 
     font-family: "Roboto Mono";
