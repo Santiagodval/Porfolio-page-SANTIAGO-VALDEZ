@@ -35,6 +35,9 @@ header ul {
 header ul li {
   list-style-type: none;
 }
+header ul li:hover {
+  transform: translate(-3px, -3px);
+}
 header ul.none {
   visibility: hidden;
   width: 1px;
@@ -59,10 +62,59 @@ header ul.show {
   justify-items: center;
 }
 .presentation h1 {
-  font-family: "";
+  font-family: "Roboto Condensed";
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px black;
 }
 .presentation h3 {
-  font-family: "";
+  font-family: "Roboto Mono";
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #8d99ae;
+  justify-self: center;
+  width: 300px;
+}
+.project-card h3 {
+  font-size: 2rem;
+}
+.project-card * {
+  justify-self: center;
+}
+.project-card p {
+  font-size: 1.5rem;
+}
+.project-card a {
+  padding: 1rem 0 1rem 0;
+  display: grid;
+}
+.project-card a figure {
+  z-index: 200;
+  width: 256px;
+}
+.project-card a figure img {
+  width: 256px;
+}
+.project-card .foldable {
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translate(0, -5rem);
+  height: 0;
+  transition: transform 1s, height 1s, opacity 1s;
+}
+.project-card:hover .foldable {
+  height: 5rem;
+  opacity: 1;
+  transform: translate(0, 0);
+  visibility: visible;
 }
 
 a {
@@ -75,4 +127,12 @@ a {
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: rgb(194, 194, 194);
+}
+
+strong {
+  color: #2e2e2e;
 }

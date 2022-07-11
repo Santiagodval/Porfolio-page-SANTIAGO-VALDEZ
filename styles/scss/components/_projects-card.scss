@@ -1,0 +1,50 @@
+@use "../utilities/variables";
+
+.project-card{
+    background-color: map-get($map: variables.$colors, $key: "blue-grey");
+    justify-self: center;
+    width: 300px;
+    h3{
+        font-size: 2rem;
+    }
+    *{
+        justify-self: center;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    a{
+        padding: 1rem 0 1rem 0;
+        display: grid;
+        
+        figure{
+            z-index: 200;
+            width: 256px;
+            
+            img{
+                width: 256px;
+            }
+        }
+    }
+    
+    .foldable{
+        text-align: center;
+        visibility: hidden;
+        position: relative;
+        opacity: 0;
+        transform: translate(0,-5rem);
+        height: 0;
+        transition: transform 1s,height 1s, opacity 1s;
+    }
+
+    &:hover{
+        .foldable{
+            height: 5rem;
+            opacity: 1;
+            transform: translate(0,0);
+            visibility: visible;
+        }
+    }
+    
+    
+}

@@ -2,6 +2,8 @@
 
 .presentation{
 
+    
+
     background-image: url("../../../images/programing.jpg");
     background-size:cover;
     background-repeat: no-repeat;
@@ -12,11 +14,13 @@
     color: map-get($map: v.$colors, $key: "semi-white");
 
     h1{
-        font-family: "";
+        font-family: "Roboto Condensed";
+        font-size: 3rem;
+        text-shadow: 2px 2px 2px black;
     }
 
     h3{
-        font-family: "";
+        font-family: "Roboto Mono";
     }
 
     display: grid;

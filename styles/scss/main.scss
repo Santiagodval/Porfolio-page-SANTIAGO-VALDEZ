@@ -3,6 +3,9 @@
 
 @use "./layout/header";
 @use "./layout/presentation";
+@use "./layout/projects";
+
+@use "./components/projects-card";
 
    a {
         color: map-get($map: variables.$colors, $key: "semi-black"); /* blue colors for links too */
@@ -12,4 +15,12 @@
 * {
     padding: 0;
     margin: 0;
+  }
+
+  body{
+    background-color: map-get($map: variables.$colors, $key: "semi-white");
+  }
+
+strong{
+  color: map-get($map: variables.$colors, $key: "semi-black");
 }
