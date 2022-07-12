@@ -4,23 +4,26 @@
 @use "./layout/header";
 @use "./layout/presentation";
 @use "./layout/projects";
+@use "./layout/about";
 
 @use "./components/projects-card";
 
-   a {
-        color: map-get($map: variables.$colors, $key: "semi-black"); /* blue colors for links too */
-        text-decoration: none; /* no underline */
-      }
+a {
+  color: map-get($map: variables.$colors, $key: "semi-black");
+  /* blue colors for links too */
+  text-decoration: none;
+  /* no underline */
+}
 
 * {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  body{
-    background-color: map-get($map: variables.$colors, $key: "semi-white");
-  }
+body {
+  background-color: map-get($map: variables.$colors, $key: "semi-white");
+}
 
-strong{
+strong {
   color: map-get($map: variables.$colors, $key: "semi-black");
 }

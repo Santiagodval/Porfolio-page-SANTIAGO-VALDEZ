@@ -4,14 +4,24 @@
     background-color: map-get($map: variables.$colors, $key: "blue-grey");
     justify-self: center;
     width: 300px;
+    font-family: "Roboto Mono";
+    //border-radius: 0.5rem;
+    border: solid 1px map-get($map: variables.$colors, $key: "blue");
+    height: fit-content;
+    margin: 1rem 0 1rem 0;
+    box-shadow: 1px 1px 1px black;
+
+
     h3{
         font-size: 2rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
     *{
         justify-self: center;
     }
     p{
         font-size: 1.5rem;
+        font-family: "Roboto Condensed";
     }
     a{
         padding: 1rem 0 1rem 0;
@@ -30,16 +40,18 @@
     .foldable{
         text-align: center;
         visibility: hidden;
-        position: relative;
         opacity: 0;
         transform: translate(0,-5rem);
         height: 0;
-        transition: transform 1s,height 1s, opacity 1s;
+        transition: transform 1s,height 1s, opacity 1s, border-width 1s, border-radius 1s;
     }
 
     &:hover{
+        border-radius: 0.2rem;
+        //border-width: 4px;
+        position: relative;
         .foldable{
-            height: 5rem;
+            height: 6rem;
             opacity: 1;
             transform: translate(0,0);
             visibility: visible;

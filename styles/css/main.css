@@ -70,25 +70,50 @@ header ul.show {
   font-family: "Roboto Mono";
 }
 
-.projects {
+.projects .projects__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
+}
+.projects h2 {
+  font-family: "Roboto Mono";
+  text-align: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.about {
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2.2rem;
+  font-family: "Roboto Mono";
+}
+.about p {
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed";
 }
 
 .project-card {
   background-color: #8d99ae;
   justify-self: center;
   width: 300px;
+  font-family: "Roboto Mono";
+  border: solid 1px #2b2d42;
+  height: fit-content;
+  margin: 1rem 0 1rem 0;
+  box-shadow: 1px 1px 1px black;
 }
 .project-card h3 {
   font-size: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 .project-card * {
   justify-self: center;
 }
 .project-card p {
   font-size: 1.5rem;
+  font-family: "Roboto Condensed";
 }
 .project-card a {
   padding: 1rem 0 1rem 0;
@@ -104,14 +129,17 @@ header ul.show {
 .project-card .foldable {
   text-align: center;
   visibility: hidden;
-  position: relative;
   opacity: 0;
   transform: translate(0, -5rem);
   height: 0;
-  transition: transform 1s, height 1s, opacity 1s;
+  transition: transform 1s, height 1s, opacity 1s, border-width 1s, border-radius 1s;
+}
+.project-card:hover {
+  border-radius: 0.2rem;
+  position: relative;
 }
 .project-card:hover .foldable {
-  height: 5rem;
+  height: 6rem;
   opacity: 1;
   transform: translate(0, 0);
   visibility: visible;
