@@ -52,7 +52,7 @@ header ul.show {
 
 .presentation {
   border-radius: 0 0 -10% -10%;
-  background-image: url("/images/programing.jpg");
+  background-image: url("../../images/programing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
