@@ -1,0 +1,16 @@
+.footer{
+    display: grid;
+
+    grid-template-columns: 300px;
+
+    justify-content: center ;
+
+    font-family: "Roboto Mono";
+    
+    text-align: center;
+
+    li{
+        font-size: 2rem;
+        list-style-type: none;
+    }
+}

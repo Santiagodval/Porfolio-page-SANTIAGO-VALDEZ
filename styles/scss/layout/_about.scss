@@ -1,6 +1,18 @@
+@use "../utilities/variables";
+
 .about{
 
     margin: 1rem 0 1rem 0;
+
+    display: grid;
+
+    grid-template-columns: minmax(300px,800px);
+    justify-content: center;
+
+    padding: 0 0 2rem 0;
+
+    border-bottom: 2px solid map-get($map: variables.$colors, $key: "semi-black");
+
 
     text-align: center;
 

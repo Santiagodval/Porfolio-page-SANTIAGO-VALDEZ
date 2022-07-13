@@ -1,4 +1,8 @@
+@use "../utilities/variables";
+
 .projects{
+
+    padding-bottom: 2rem;
 
     .projects__cards{
         display: grid;
@@ -8,6 +12,7 @@
     justify-content: center;
     }
     
+    border-bottom: 2px solid map-get($map: variables.$colors, $key: "semi-black");
 
     h2{
         font-family: "Roboto Mono";
