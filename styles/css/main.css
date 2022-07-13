@@ -144,6 +144,7 @@ header ul.show {
   height: fit-content;
   margin: 1rem 0 1rem 0;
   box-shadow: 1px 1px 1px black;
+  text-align: center;
 }
 .project-card h3 {
   font-size: 2rem;
