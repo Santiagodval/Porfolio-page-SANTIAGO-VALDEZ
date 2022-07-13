@@ -12,6 +12,7 @@
     padding: 0 0 2rem 0;
 
     border-bottom: 2px solid map-get($map: variables.$colors, $key: "semi-black");
+    border-top: 2px solid map-get($map: variables.$colors, $key: "semi-black");
 
 
     text-align: center;

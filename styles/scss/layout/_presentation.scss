@@ -2,14 +2,14 @@
 
 .presentation{
 
-   
+    border-radius: 0 0 -10% -10%;
 
     background-image: url("../../../images/programing.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 50vh;
+    height: 80vh;
 
     color: map-get($map: v.$colors, $key: "semi-white");
 
